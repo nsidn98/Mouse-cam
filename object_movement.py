@@ -150,8 +150,8 @@ while True:
 	moveMouse(dX,-dY)
 
 def moveMouse(X,Y):
-
 	pyautogui.moveRel(dX,dY,duration=0)	
+	
 # cleanup the camera and close any open windows
 camera.release()
 cv2.destroyAllWindows()
