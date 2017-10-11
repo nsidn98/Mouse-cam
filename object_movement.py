@@ -18,7 +18,8 @@ ap.add_argument("-b", "--buffer", type=int, default=32,
 	help="max buffer size")
 args = vars(ap.parse_args())
 
-# define the lower and upper boundaries of the "green"
+# define the lower and upper boundaries of the "yellow"
+#change the limits according to the color you want to use
 # ball in the HSV color space
 # range for red=Scalar(170, 70, 50), Scalar(180, 255, 255)
 #range for green=greenLower = (29, 86, 6),greenUpper = (64, 255, 255)
