@@ -9,6 +9,8 @@ import cv2
 import pyautogui
 
 pyautogui.FAILSAFE=False
+def moveMouse(X,Y):
+	pyautogui.moveRel(dX,dY,duration=0)
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -150,9 +152,7 @@ while True:
 		break
 	moveMouse(dX,-dY)
 
-def moveMouse(X,Y):
-	pyautogui.moveRel(dX,dY,duration=0)	
-	
+
 # cleanup the camera and close any open windows
 camera.release()
 cv2.destroyAllWindows()
