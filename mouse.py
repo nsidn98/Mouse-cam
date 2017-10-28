@@ -4,7 +4,7 @@ import time
 import pyautogui
 pyautogui.FAILSAFE = False 
 
-ser =serial.Serial('/dev/cu.usbmodem1421',9600,timeout=None)
+ser =serial.Serial('/dev/cu.usbmodem1421',9600,timeout=None) #change it according to your port
 x=0
 y=0
 i=0
