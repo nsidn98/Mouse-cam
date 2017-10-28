@@ -40,8 +40,8 @@ void setup() {
 void loop() {
   mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
 
- // vx = -(gx+300)/80;  // "+300" because the x axis of gyroscope give values about -350 while it's not moving. Change this value if you get something different using the TEST code, chacking if there are values far from zero.
-  //vy = (gy)/80; // same here about "-100"
+  vx = -(gx+300)/80;  // "+300" because the x axis of gyroscope give values about -350 while it's not moving. Change this value if you get something different using the TEST code, chacking if there are values far from zero.
+  vy = (gy)/80; 
   prt(ax,ay,az,gx,gy,gz);
 //  Mouse.move(vx, vy);
   
